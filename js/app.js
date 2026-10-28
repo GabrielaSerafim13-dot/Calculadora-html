@@ -1,18 +1,22 @@
 let Expressão = "";
 
 function Add(a) {
-    Expressão = Expressão + a;
-    alert(`teste: ${Expressão}`);  
+    Expressão += a;
+    document.getElementById("label").textContent = Expressão;
 }
+
 function Clear() {
     Expressão = "";
-    alert(`teste: ${Expressão}`);
+    document.getElementById("label").textContent = "";
 }
+
 function Calculate() {
     try {
         let resultado = eval(Expressão);
-        alert(`teste: ${resultado}`);
+        document.getElementById("label").textContent = resultado;
+        Expressão = String(resultado);
     } catch {
-        alert("error")
+        document.getElementById("label").textContent = "Erro";
+        Expressão = "";
     }
 }
