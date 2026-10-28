@@ -1,0 +1,11 @@
+.btnsn {
+    align-items: center;
+    text-align: center;
+}
+button {
+    height: 40px;
+    width: 3%;
+}
+body {
+    background-color: aquamarine;
+}
