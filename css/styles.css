@@ -9,3 +9,16 @@ button {
 body {
     background-color: aquamarine;
 }
+.btn {
+    height: 40px;
+    width: 6%;
+}
+.label {
+    width: 20%;
+    height: auto;
+    border: 50px;
+    border-radius: 20px;
+    border-color: black;
+    align-items: center;
+    text-align: center;
+}
